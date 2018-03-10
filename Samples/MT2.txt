@@ -1,0 +1,28 @@
+BEGIN_MACHINE
+Q0 Q1 a [ R
+Q0 Q6 [ [ R
+Q0 Q4 b [ R
+Q1 Q1 a a R
+Q1 Q1 b b R
+Q1 Q2 [ [ L
+Q2 Q6 [ [ R
+Q2 Q3 a [ L
+Q3 Q3 a a L
+Q3 Q3 b b L
+Q3 Q0 [ [ R
+Q4 Q4 a a R
+Q4 Q4 b b R
+Q4 Q5 [ [ L
+Q5 Q3 b [ L
+Q5 Q6 [ [ R
+END_MACHINE
+BEGIN_INPUT
+aabbaa
+ababa
+aabbb
+abaab
+END_INPUT
+RUN
+
+Detector de palindromos, o estado de aceitacao é Q6
+Se deseja rodar passo a passo, trocar 'RUN' por 'STEP'
